@@ -74,7 +74,6 @@ public class Car extends Vehicle {
         this.seats = seats;
         this.type = type;
         this.currentGear = 1;
-        //Hint: Car extends Vehicle
     }
 
 
