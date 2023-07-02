@@ -3,9 +3,7 @@ package com.driver;
 public class F1 extends Car {
 
     public F1(String name, boolean isManual) {
-        super(name,4,2,4,isManual,"F1",2);
-
-        //Use arbitrary values for parameters which are not mentioned
+        super(name,4,2,4,true,"F1",2);
     }
 
     public void accelerate(int rate){
@@ -21,8 +19,8 @@ public class F1 extends Car {
          */
 
         if(newSpeed == 0) {
-            changeGear(1);
             stop();
+            changeGear(1);
             //Stop the car, set gear as 1
         } else if (newSpeed <= 50) {
             changeGear(2);
